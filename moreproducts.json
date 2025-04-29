@@ -1,0 +1,259 @@
+[
+    {
+      "id": 1,
+      "category": "mobiles",
+      "name": "Nothing Phone 2",
+      "image": "./Images/Nothing Phone 2.webp",
+      "price": 599,
+      "description": "Sleek smartphone with transparent back and Glyph interface."
+    },
+    {
+      "id": 2,
+      "category": "mobiles",
+      "name": "Motorola Edge Plus",
+      "image": "./Images/Motorola Edge+ (2023).webp",
+      "price": 799,
+      "description": "Powerful Android phone with pOLED display and great battery life."
+    },
+    {
+      "id": 3,
+      "category": "mobiles",
+      "name": "ASUS ROG Phone 7",
+      "image": "./Images/ASUS ROG Phone 7.jpg",
+      "price": 999,
+      "description": "Gaming smartphone with high refresh rate and cooling system."
+    },
+    {
+      "id": 4,
+      "category": "mobiles",
+      "name": "Sony Xperia 1 V",
+      "image": "./Images/Sony Xperia 1 V.webp",
+      "price": 1199,
+      "description": "Flagship Sony phone with 4K OLED display and pro-grade camera."
+    },
+    {
+      "id": 5,
+      "category": "mobiles",
+      "name": "RedMagic 8 Pro",
+      "image": "./Images/RedMagic 8 Pro.webp",
+      "price": 649,
+      "description": "Gaming phone with Snapdragon 8 Gen 2 and RGB fan."
+    },
+    {
+      "id": 6,
+      "category": "laptop",
+      "name": "MSI Stealth 14 Studio",
+      "image": "./Images/MSI Stealth 14 Studio.png",
+      "price": 1699,
+      "description": "Powerful thin laptop for gamers and creators."
+    },
+    {
+      "id": 7,
+      "category": "laptop",
+      "name": "Acer Swift X 14",
+      "image": "./Images/Acer Swift X 14.jpg",
+      "price": 1049,
+      "description": "Portable creator laptop with RTX 4050 GPU."
+    },
+    {
+      "id": 8,
+      "category": "laptop",
+      "name": "Gigabyte Aero 16 OLED",
+      "image": "./Images/Gigabyte Aero 16 OLED.jpg",
+      "price": 1799,
+      "description": "Creator-focused laptop with stunning OLED panel."
+    },
+    {
+      "id": 9,
+      "category": "laptop",
+      "name": "Razer Blade 14",
+      "image": "./Images/Razer Blade 14.png",
+      "price": 2199,
+      "description": "High-performance laptop with sleek design and RTX 4070."
+    },
+    {
+      "id": 10,
+      "category": "laptop",
+      "name": "Microsoft Surface Laptop 5",
+      "image": "./Images/Microsoft Surface Laptop 5.webp",
+      "price": 1299,
+      "description": "Elegant productivity laptop with touchscreen and long battery."
+    },
+    {
+      "id": 11,
+      "category": "accessory",
+      "name": "Bose QuietComfort Ultra",
+      "image": "./Images/Bose QuietComfort Ultra.webp",
+      "price": 429,
+      "description": "Premium noise-canceling headphones with immersive audio."
+    },
+    {
+      "id": 12,
+      "category": "accessory",
+      "name": "Beats Studio Buds+",
+      "image": "./Images/Beats Studio Buds+.jpeg",
+      "price": 169,
+      "description": "Compact earbuds with great sound and ANC."
+    },
+    {
+      "id": 13,
+      "category": "accessory",
+      "name": "SteelSeries Arctis Nova 7",
+      "image": "./Images/SteelSeries Arctis Nova 7.png",
+      "price": 179,
+      "description": "Wireless gaming headset with spatial audio support."
+    },
+    {
+      "id": 14,
+      "category": "watches",
+      "name": "Samsung Galaxy Watch 6",
+      "image": "./Images/Samsung Galaxy Watch 6.webp",
+      "price": 429,
+      "description": "Smartwatch with rotating bezel and advanced health tracking."
+    },
+    {
+      "id": 15,
+      "category": "watches",
+      "name": "Apple Watch Series 4",
+      "image": "./Images/Apple Watch Series 4.webp",
+      "price": 229,
+      "description": "Smart Watch with dynamic lighting effects."
+    },
+    {
+      "id": 16,
+      "category": "accessory",
+      "name": "HyperX Pulsefire Haste 2",
+      "image": "./Images/HyperX Pulsefire Haste 2.webp",
+      "price": 69,
+      "description": "Ultra-light gaming mouse with precision tracking."
+    },
+    {
+      "id": 17,
+      "category": "accessory",
+      "name": "Anker 737 Power Bank",
+      "image": "./Images/Anker 737 Power Bank.webp",
+      "price": 159,
+      "description": "High-output power bank with fast charging and display."
+    },
+    {
+      "id": 18,
+      "category": "accessory",
+      "name": "SanDisk PRO Portable SSD",
+      "image": "./Images/SanDisk PRO Portable SSD.webp",
+      "price": 189,
+      "description": "Durable, fast SSD for high-speed file transfers."
+    },
+    {
+      "id": 19,
+      "category": "watches",
+      "name": "Huawei Watch D",
+      "image": "./Images/huawei-watch-d.webp",
+      "price": 379,
+      "description": "Streaming and productivity control pad with customization."
+    },
+    {
+      "id": 20,
+      "category": "accessory",
+      "name": "NETGEAR Nighthawk",
+      "image": "./Images/NETGEAR Nighthawk.png",
+      "price": 599,
+      "description": "Tri-band WiFi 6E router with ultra-fast speeds."
+    },
+    {
+      "id": 21,
+      "category": "accessory",
+      "name": "Keychron Q1 V2",
+      "image": "./Images/Keychron Q1 V2.jpg",
+      "price": 199,
+      "description": "Hot-swappable mechanical keyboard with premium build."
+    },
+    {
+      "id": 22,
+      "category": "accessory",
+      "name": "Insta360 X3",
+      "image": "./Images/Insta360 X3.webp",
+      "price": 449,
+      "description": "360-degree action camera with incredible video quality."
+    },
+    {
+      "id": 23,
+      "category": "accessory",
+      "name": "Autel EVO Nano+ Drone",
+      "image": "./Images/Autel EVO Nano+ Drone.webp",
+      "price": 799,
+      "description": "Compact 4K drone with advanced obstacle avoidance."
+    },
+    {
+      "id": 24,
+      "category": "laptop",
+      "name": "ASUS TUF Gaming F15",
+      "image": "./Images/ASUS TUF Gaming F15.jpeg",
+      "price": 1149,
+      "description": "Rugged gaming laptop with RTX graphics and fast refresh."
+    },
+    {
+      "id": 25,
+      "category": "mobiles",
+      "name": "Realme GT5 Pro",
+      "image": "./Images/Realme GT5 Pro.jpg",
+      "price": 699,
+      "description": "Budget flagship with high-end specs and fast charging."
+    },
+    {
+      "id": 26,
+      "category": "mobiles",
+      "name": "OnePlus Nord 3",
+      "image": "./Images/OnePlus Nord 3.jpg",
+      "price": 449,
+      "description": "Mid-range device with AMOLED display and fast charging."
+    },
+    {
+      "id": 27,
+      "category": "laptop",
+      "name": "HP Omen 16",
+      "image": "./Images/HP Omen 16.webp",
+      "price": 1499,
+      "description": "Gaming laptop with Ryzen 9 and RTX 4070 GPU."
+    },
+    {
+      "id": 28,
+      "category": "laptop",
+      "name": "Crucial P5 Plus NVMe SSD",
+      "image": "./Images/Crucial P5 Plus NVMe SSD.jpg",
+      "price": 149,
+      "description": "High-performance Gen4 SSD for gaming laptops."
+    },
+    {
+      "id": 29,
+      "category": "mobiles",
+      "name": "Asus Zenfone 10",
+      "image": "./Images/Asus Zenfone 10.jpg",
+      "price": 799,
+      "description": "Compact flagship phone with Snapdragon 8 Gen 2."
+    },
+    {
+      "id": 30,
+      "category": "mobiles",
+      "name": "Amazon Echo Show 8",
+      "image": "./Images/Amazon Echo Show 8.jpg",
+      "price": 149,
+      "description": "Smart display with Alexa and adaptive content."
+    },
+    {
+      "id": 31,
+      "category": "laptops",
+      "name": "Razer Kiyo Pro Ultra",
+      "image": "./Images/Razer Kiyo Pro Ultra.jpeg",
+      "price": 299,
+      "description": "Professional-grade webcam for streamers and creators."
+    },
+    {
+      "id": 32,
+      "category": "laptops",
+      "name": "ASUS Vivobook S 15 OLED",
+      "image": "./Images/ASUS Vivobook S 15 OLED.jpeg",
+      "price": 999,
+      "description": "Stylish laptop with OLED display and Intel Core Ultra."
+    }
+  ]
+  

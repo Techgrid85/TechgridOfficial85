@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.min.css" rel="stylesheet">
+    <link rel="website icon" type="jpg" href="./OtherImages/icon.jpg">
+    <title>Techgrid | Checkout</title>
+</head>
+<style>
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav, .main-navbar, .product-card, .filter {
+  opacity: 0;
+}
+.nav {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main-navbar {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.product-card {
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.filter{
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+.loadmore-btn{
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.categories .box{
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+      body {
+        font-family: 'Poppins', poppins;
+        margin: 0;
+        background: #f7f7f7;
+      }
+      .nav {
+        background: #1f1f1f;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: poppins;
+        position: sticky;
+      }
+      .nav-para{
+        display: inline-flex;
+        margin-left: 50px;
+        color: #B2B2B2;
+        font-size: 12px;
+        font-family: poppins;
+      }
+      .nav-link{
+        margin-left: 630px;
+      }
+      .nav-link {
+        margin-left: 680px;
+        display: inline-flex;
+        font-size: 15px;
+      }
+
+      .divider {
+        margin-top: 3px;
+        height: 20px;
+        width: 1px;
+        background-color: #B2B2B2;
+        display: inline-block;
+      }
+
+      .nav-a{
+        color: #B2B2B2;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      .nav-a:hover{
+        color: #6C7AE0;
+      }
+      .main-navbar{
+        padding: 15px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      .logo img{
+        margin-top: 3px;
+        margin-left: 25px;
+        padding: 0;
+        height: 50px;
+      }
+      .nav-items{
+        margin-left: 50px;
+      }
+      .items{
+        margin: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #333333;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .items a{
+        transition: 0.5s;
+        text-decoration: none;
+        color: #333333;
+      }
+      .items a:hover{
+        color: #6C7AE0;
+      }
+
+.menu-toggle{
+    display: none;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 250px;
+}
+
+.search-input {
+  padding: 8px 15px;
+  padding-right: 35px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  width: 170px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6C7AE0;
+}
+
+.search-icon {
+  position: absolute;
+  right: 30px;
+  color: #666;
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 20px;
+  color: #333333;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.icons:hover {
+  color: #6C7AE0;
+}
+
+.cart-icon, .wishlist-icon {
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart, .wish-quan {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 12px;
+  height: 12px;
+  background: #6C7AE0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+#cart_amount, #wish_amount {
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  /* Main navbar adjustments */
+  .main-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    align-items: center;
+  }
+
+  /* First line - logo and icons */
+  .logo {
+    order: 1;
+    flex: 1;
+    max-width: 90px; /* Allows logo to shrink */
+    text-align: center;
+  }
+
+  .logo img {
+    margin-left: 0;
+    height: 30px;
+    max-width: 100%;
+  }
+
+  .nav-icons {
+    order: 2;
+    margin-left: auto; /* Pushes icons to the right */
+    display: flex;
+    align-items: center;
+  }
+  /* Menu toggle button */
+  .menu-toggle {
+    order: 3;  
+    display: block;
+    margin-left: 0;
+    font-size: 22px;
+  }
+  /* Hide the search icon from nav-icons since we'll show it in the search bar */
+  .nav-icons .search-icon {
+    display: none;
+  }
+
+  /* Second line - search bar */
+  .search-container {
+    order: 4;
+    width: 100%;
+    left: 0;
+    margin-top: 10px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-input {
+    margin-left: 20px;
+    width: 100%;
+    padding: 8px 35px 8px 15px;
+  }
+  .search-input:focus{
+    width: 100%;
+  }
+  .search-icon {
+    display: block;
+    right: 45px;
+  }
+
+  /* Menu items - hidden by default, shown when toggled */
+  .nav-items {
+    order: 5;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .items {
+    margin: 5px 0;
+    padding: 8px 0;
+  }
+
+  /* Adjust cart/wishlist icons */
+  .icons {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .cart, .wish-quan {
+    top: -6px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Tighten up the spacing on very small screens */
+  .nav-icons {
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .menu-toggle {
+    font-size: 20px;
+  }
+
+  .icons {
+    font-size: 16px;
+  }
+}
+    /* Checkout page */
+    .checkout-page {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 20px 50px;
+        justify-content: space-between;
+    }
+    .checkout-form {
+        background: #FFFFFF;
+        border-radius: 10px;
+        width: 57%;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .checkout-form h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #333;
+        text-align: center;
+    }
+    .checkout-form label {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .checkout-form select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: 'Poppins';
+    }
+    .checkout-form input{
+        width: 96%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: 'Poppins';
+    }
+    .order-summary {
+        background: #FFFFFF;
+        border-radius: 10px;
+        width: 30%;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        position: sticky;
+        top: 20px;
+        text-align: center;
+    }
+    .order-summary h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    .order-summary p {
+        font-size: 14px;
+        margin: 10px 0;
+        color: #333;
+    }
+    .order-summary .price-total {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .order-summary .price-total h4 {
+        font-size: 18px;
+        color: #333;
+    }
+    .order-summary .price-total span {
+        font-weight: 600;
+        color: #6C7AE0;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        background: #222;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        font-size: 15px;
+        font-weight: 550;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: all 0.3s;
+    }
+    .submit-btn:hover {
+        background: #5a66c7;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        background: #eee;
+        margin: 20px 0;
+    }
+    /* Loading overlay */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .loading-spinner {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+    }
+    .loading-spinner i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    /* Logout modal */
+    #logout {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    #logoutForm {
+        position: relative;
+        background-color: #ffffff;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        width: 340px;
+        text-align: center;
+        animation: fadeIn 0.6s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    #logoutForm i {
+        font-size: 36px;
+        margin-bottom: 15px;
+        color: #ffc107;
+    }
+    #logoutForm h3 {
+        font-size: 18px;
+        margin-bottom: 25px;
+        color: #333;
+    }
+    .logout-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #222;
+        color: #fff;
+        border: 1px solid #222;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 5px;
+    }
+    .logout-btn:hover {
+        background-color: #fff;
+        color: #222;
+    }
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px;
+        font-size: 30px;
+        background: none;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #000;
+        border: none;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 20px;
+        background-color: #111827;
+        color: #d1d5db;
+        padding: 70px 20px 40px;
+        font-family: 'Poppins';
+    }
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+    .footer-section h4 {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 16px;
+        color: #9ca3af;
+        letter-spacing: 1px;
+    }
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-section li {
+        margin-bottom: 12px;
+    }
+    .footer-section a {
+        color: #d1d5db;
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.3s;
+    }
+    .footer-section a:hover {
+        color: white;
+    }
+    .newsletter {
+        grid-column: span 2;
+    }
+    .newsletter p {
+        margin-bottom: 12px;
+        font-size: 15px;
+        color: #d1d5db;
+    }
+    .newsletter form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+    .newsletter input[type="email"] {
+        font-family: 'Poppins';
+        padding: 10px 12px;
+        width: 60%;
+        max-width: 250px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    .newsletter button {
+        font-family: 'Poppins';
+        padding: 10px 16px;
+        background-color: #6C7AE0;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .newsletter button:hover {
+        background-color: #fff;
+        color: #6C7AE0;
+    }
+    .social-icons {
+        display: flex;
+        gap: 16px;
+    }
+    .social-icons a {
+        color: #9ca3af;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+    .social-icons a:hover {
+        color: white;
+    }
+    .footer-bottom {
+        border-top: 1px solid #374151;
+        margin-top: 40px;
+        padding-top: 24px;
+        text-align: center;
+        font-size: 14px;
+        color: #9ca3af;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .nav {
+            padding: 8px 10px;
+            justify-content: center;
+        }
+        .nav-para {
+            margin-left: 20px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .nav-link {
+            margin-left: 0;
+            justify-content: center;
+            width: 100%;
+        }
+        .nav-a {
+            margin: 0 8px;
+            font-size: 10px;
+        }
+        .divider {
+            height: 10px;
+        }
+        .main-navbar {
+            padding: 10px;
+            margin-bottom: 20px;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .logo img {
+            margin-left: 0;
+            height: 30px;
+            align-self: center;
+        }
+        .nav-items {
+            margin-left: 0;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+        .nav-items.show {
+            display: flex;
+        }
+        .items {
+            margin: 5px 0;
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+        .nav-icons {
+            margin-left: 0;
+        }
+        .icons {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .menu-toggle {
+            display: block;
+            margin-left: 15px;
+            font-size: 20px;
+            color: #333;
+            background: none;
+            border: none;
+        }
+        .checkout-page {
+            flex-direction: column;
+            padding: 10px;
+            gap: 20px;
+        }
+        .checkout-form {
+            width: 90%;
+            padding: 15px;
+        }
+        .order-summary {
+            width: 90%;
+            padding: 15px;
+            position: static;
+        }
+        #logoutForm {
+            margin-right: 20px;
+            width: 70%;
+            padding: 20px;
+        }
+        footer {
+            padding: 30px 15px;
+        }
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+        .newsletter {
+            grid-column: span 1;
+        }
+        .newsletter form {
+            flex-direction: column;
+        }
+        .newsletter input[type="email"] {
+            width: 90%;
+            max-width: none;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .newsletter button {
+            text-align: center;
+            width: 50%;
+            max-width: none;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    @media (max-width: 768px) {
+        .main-navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            position: relative;
+        }
+        .logo {
+            order: 1;
+        }
+        .nav-icons {
+            order: 2;
+            margin-left: auto;
+            display: flex;
+        }
+        .menu-toggle {
+            order: 3;
+        }
+        .nav-items {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            flex-direction: column;
+            display: none;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        .nav-items.show {
+            display: flex;
+        }
+        .items {
+            padding: 12px 20px;
+            margin: 0;
+            border-top: 1px solid #f0f0f0;
+        }
+        .icons {
+            margin: 0 0 0 15px;
+            font-size: 18px;
+        }
+        .checkout-form input{
+            width: 89%;
+        }
+    }
+</style>
+<body>
+    <div id="logout">
+        <div id="logoutForm">
+            <button class="close-btn" id="cancelLogout">×</button>
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Are you sure you want to logout from the current account?</h3>
+            <button class="logout-btn" onclick="performLogout()">LOGOUT</button>
+        </div>
+    </div>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner"></i>
+            <p>Processing your order...</p>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="nav-para">Free shipping for standard order over 1000€</div>
+        <div class="nav-link">
+            <span class="divider"></span>
+            <a href="#" class="nav-a">Help & FAQs</a>
+            <span class="divider"></span>
+            <a href="#" class="nav-a">My Account</a>
+            <span class="divider"></span>
+            <a href="#" class="nav-a" id="showLogout">Logout</a>
+            <span class="divider"></span>
+        </div>
+    </nav>
+    <header>
+        <div class="main-navbar">
+            <div class="logo"><a href="./index.html"><img src="./OtherImages/icon2.jpg"></a></div>
+            <div class="nav-items" id="mobileMenu">
+              <span class="items"><a href="./index.html">Home</a></span>
+              <span class="items"><a href="./products.html">Shop</a></span>
+              <span class="items"><a href="./offers.html">Offers</a></span>
+              <span class="items"><a href="./blog.html">Blog</a></span>
+              <span class="items"><a href="./about.html">About</a></span>
+              <span class="items"><a href="./contact.html">Contact</a></span>
+            </div> 
+            <div class="search-container">
+              <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+              <span class="icons search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="nav-icons">
+              <a href="#" class="icons cart-icon" id="cart-icon" onclick="openCart()">
+                <i class="fa-solid fa-cart-shopping">
+                  <div class="cart">
+                    <div id="cart_amount">0</div>
+                  </div>
+                </i>
+              </a>
+              <a href="#" class="icons wishlist-icon" onclick="openwish()">
+                <i class="fa-regular fa-heart">
+                  <div class="wish-quan">
+                    <div id="wish_amount">0</div>
+                  </div>
+                </i>
+              </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          
+    </header>
+    <div class="checkout-page">
+        <div class="checkout-form">
+            <h2>Checkout</h2>
+            <form id="checkoutForm" onsubmit="submitCheckout(event)">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+                <label for="address">Address *</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+                <label for="city">City *</label>
+                <input type="text" id="city" placeholder="Enter your city" required>
+                <label for="postcode">Postcode / Zip *</label>
+                <input type="number" id="postcode" placeholder="Enter postcode" required>
+                <label for="paymentMethod">Payment Method *</label>
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected>Select a payment method...</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+        </div>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="orderSummaryItems"></div>
+            <hr>
+            <p><strong>Subtotal:</strong> <span id="orderSubtotal">0.00€</span></p>
+            <p><strong>Shipping:</strong> <span id="orderShipping">0.00€</span></p>
+            <div class="price-total">
+                <h4>Total: <span id="orderTotal">0.00€</span></h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Our Products</h4>
+                <ul>
+                    <li><a href="./products.html">Laptops</a></li>
+                    <li><a href="./products.html">Mobiles</a></li>
+                    <li><a href="./products.html">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="./blog.html">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="./faqs.html">Help and FAQs</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Subscribe to our newsletter</h4>
+                <p>Get the latest news and updates.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required />
+                    <button>Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61573026815423" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Tech Grid, Inc. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script>
+    // Toggle mobile menu
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('show');
+        const icon = document.querySelector('.menu-toggle i');
+        if (menu.classList.contains('show')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const menu = document.getElementById('mobileMenu');
+        const toggle = document.querySelector('.menu-toggle');
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+            menu.classList.remove('show');
+            const icon = document.querySelector('.menu-toggle i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Logout functionality
+    let logout = document.getElementById('logout');
+    let showLogoutBtn = document.getElementById('showLogout');
+    let cancelLogout = document.getElementById('cancelLogout');
+
+    showLogoutBtn.onclick = () => {
+        logout.style.display = 'flex';
+    }
+
+    cancelLogout.onclick = () => {
+        logout.style.display = 'none';
+    }
+
+    function performLogout() {
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('username');
+        window.location.href = './index.html';
+    }
+
+    // Load checkout data
+    function loadCheckoutData() {
+        const checkoutData = JSON.parse(localStorage.getItem('checkoutData')) || {};
+        const { items = [], subtotal = 0, shipping = 0, total = 0 } = checkoutData;
+
+        // Update cart amount in navbar
+        const cartIcon = document.getElementById('cart_amount');
+        cartIcon.innerHTML = items.reduce((sum, item) => sum + item.item, 0) || 0;
+
+        // Populate order summary
+        const orderSummaryItems = document.getElementById('orderSummaryItems');
+        orderSummaryItems.innerHTML = items.length > 0
+            ? items.map(item => `
+                <p>${item.name} (x${item.item}): €${(item.price * item.item).toFixed(2)}</p>
+            `).join('')
+            : '<p>No items in the order.</p>';
+
+        document.getElementById('orderSubtotal').textContent = `${subtotal.toFixed(2)}€`;
+        document.getElementById('orderShipping').textContent = `${shipping.toFixed(2)}€`;
+        document.getElementById('orderTotal').textContent = `${total.toFixed(2)}€`;
+    }
+
+    // Submit checkout form
+    function submitCheckout(event) {
+        event.preventDefault();
+
+        // Validate form inputs
+        const fullName = document.getElementById('fullName').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const postcode = document.getElementById('postcode').value.trim();
+        const paymentMethod = document.getElementById('paymentMethod').value;
+
+        if (!fullName || !address || !city || !postcode || !paymentMethod) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Show loading overlay
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        loadingOverlay.style.display = 'flex';
+
+        // Simulate payment processing
+        setTimeout(() => {
+            loadingOverlay.style.display = 'none';
+
+            // Clear cart and checkout data
+            localStorage.removeItem('data');
+            localStorage.removeItem('checkoutData');
+
+            // Show success message and redirect
+            alert('Thank you for your order! Your order has been successfully placed.');
+            window.location.href = './index.html';
+        }, 1500);
+    }
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCheckoutData();
+    });
+</script>
+</html>

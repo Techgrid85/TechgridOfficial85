@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "category": "mobiles",
+      "name": "iPhone 15 Pro Max",
+      "image": "./Images/iPhone 15 Pro Max.webp",
+      "price": 1149,
+      "description": "Apple's flagship phone with A17 Pro chip and titanium body."
+    },
+    {
+      "id": 2,
+      "category": "mobiles",
+      "name": "Nothing Phone 2",
+      "image": "./Images/Nothing Phone 2.webp",
+      "price": 599,
+      "description": "Sleek smartphone with transparent back and Glyph interface."
+    },
+    {
+      "id": 3,
+      "category": "mobiles",
+      "name": "Oppo Find X8 Pro",
+      "image": "./OtherImages/Oppo Find X8 Pro.jpg",
+      "price": 1099,
+      "description": "Flagship phone with Hasselblad camera and Dimensity 9400."
+    },
+    {
+      "id": 4,
+      "category": "mobiles",
+      "name": "Vivo X200 Pro",
+      "image": "./OtherImages/Vivo X200 Pro.webp",
+      "price": 949,
+      "description": "Premium smartphone with ZEISS optics and 120Hz AMOLED."
+    },
+    {
+      "id": 5,
+      "category": "mobiles",
+      "name": "Poco F6 Pro",
+      "image": "./OtherImages/Poco F6 Pro.webp",
+      "price": 549,
+      "description": "Mid-range powerhouse with Snapdragon 8s Gen 3."
+    },
+    {
+      "id": 6,
+      "category": "mobiles",
+      "name": "Honor Magic 6 Pro",
+      "image": "./OtherImages/Honor Magic 6 Pro.jpg",
+      "price": 899,
+      "description": "High-end phone with AI-enhanced camera and fast charging."
+    },
+    {
+        "id": 7,
+        "category": "mobiles",
+        "name": "Samsung Galaxy S23",
+        "image": "./Images/Samsung Galaxy S23.webp",
+        "price": 799,
+        "description": "Latest Android flagship with stunning AMOLED display."
+      },
+    {
+      "id": 8,
+      "category": "laptop",
+      "name": "MacBook Air M3",
+      "image": "./Images/MacBook Air M3.jpeg",
+      "price": 1049,
+      "description": "Lightweight laptop with M3 chip and great battery life."
+    },
+    {
+      "id": 9,
+      "category": "laptop",
+      "name": "Dell Alienware",
+      "image": "./OtherImages/Alienware m16 R2.jpeg",
+      "price": 1899,
+      "description": "Gaming laptop with Intel Core Ultra 9 and RTX 4080."
+    },
+    {
+      "id": 10,
+      "category": "laptop",
+      "name": "LG Gram 17",
+      "image": "./OtherImages/LG Gram 17.jpg",
+      "price": 1399,
+      "description": "Ultra-light laptop with 17-inch display and Intel Evo."
+    },
+    {
+      "id": 11,
+      "category": "laptop",
+      "name": "Framework Laptop 16",
+      "image": "./OtherImages/Framework Laptop 16.jpeg",
+      "price": 1599,
+      "description": "Modular laptop with customizable ports and AMD Ryzen."
+    },
+    {
+      "id": 12,
+      "category": "laptop",
+      "name": "Acer Predator Helios 18",
+      "image": "./OtherImages/Acer Predator Helios 18.jpeg",
+      "price": 2299,
+      "description": "High-end gaming laptop with 18-inch Mini LED display."
+    },
+    {
+      "id": 13,
+      "category": "laptop",
+      "name": "Samsung Galaxy Book 4 Pro",
+      "image": "./OtherImages/Samsung Galaxy Book 4 Pro.webp",
+      "price": 1499,
+      "description": "Sleek laptop with AMOLED touchscreen and Intel Core Ultra."
+    },
+    {
+      "id": 14,
+      "category": "accessory",
+      "name": "Sony WH-1000XM5",
+      "image": "./Images/Sony WH-1000XM5.jpg",
+      "price": 369,
+      "description": "Noise-canceling headphones with excellent sound."
+    },
+    {
+      "id": 15,
+      "category": "accessory",
+      "name": "Jabra Elite 10",
+      "image": "./OtherImages/Jabra Elite 10.webp",
+      "price": 249,
+      "description": "Premium earbuds with Dolby Atmos and strong ANC."
+    },
+    {
+      "id": 16,
+      "category": "accessory",
+      "name": "Sennheiser Momentum 4",
+      "image": "./OtherImages/Sennheiser Momentum 4 Wireless.webp",
+      "price": 349,
+      "description": "High-fidelity headphones with 60-hour battery life."
+    },
+    {
+      "id": 17,
+      "category": "accessory",
+      "name": "Logitech G Pro X 2",
+      "image": "./OtherImages/Logitech G Pro X 2 Lightspeed.webp",
+      "price": 249,
+      "description": "Wireless gaming headset with graphene audio drivers."
+    },
+    {
+      "id": 18,
+      "category": "watches",
+      "name": "Samsung Galaxy Watch 6",
+      "image": "./Images/Samsung Galaxy Watch 6.webp",
+      "price": 429,
+      "description": "Smartwatch with rotating bezel and advanced health tracking."
+    },
+    {
+      "id": 19,
+      "category": "watches",
+      "name": "Garmin Venu 3",
+      "image": "./OtherImages/Garmin Venu 3.jpg",
+      "price": 449,
+      "description": "Fitness-focused smartwatch with AMOLED display."
+    },
+    {
+      "id": 20,
+      "category": "watches",
+      "name": "Fitbit Versa 4",
+      "image": "./OtherImages/Fitbit Versa 4.webp",
+      "price": 199,
+      "description": "Affordable smartwatch with health and fitness tracking."
+    }
+  ]

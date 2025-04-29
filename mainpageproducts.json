@@ -1,0 +1,116 @@
+[
+  {  
+    "item":1,
+    "id": 1,
+    "category": "mobiles",
+    "name": "iPhone 15 Pro Max",
+    "image": "./Images/iPhone 15 Pro Max.webp",
+    "price": 1149,
+    "description": "Apple's flagship phone with A17 Pro chip and titanium body."
+  },
+  {
+    "item":1,
+    "id": 2,
+    "category": "watches",
+    "name": "Apple Watch Series 9",
+    "image": "./Images/Apple Watch Series 9.jpg",
+    "price": 469,
+    "description": "Smartwatch with advanced health sensors and bright display."
+  },
+  {
+    "item":1,
+    "id": 3,
+    "category": "laptop",
+    "name": "Dell XPS 16",
+    "image": "./Images/Dell XPS 16.webp",
+    "price": 1799,
+    "description": "Premium Windows laptop with OLED touch display."
+  },
+  {
+    "item":1,
+    "id":4,
+    "category": "accessory",
+    "name": "Samsung Buds2",
+    "image": "./Images/Samsung Galaxy Buds2 Pro.jpg",
+    "price": 199,
+    "description": "Compact earbuds with Hi-Fi sound and noise cancellation."
+  },
+  {
+    "item":1,
+    "id": 5,
+    "category": "laptop",
+    "name": "HP Spectre x360",
+    "image": "./Images/HP Spectre x360.webp",
+    "price": 1499,
+    "description": "Convertible touchscreen laptop with 13th Gen Intel CPU."
+  },
+
+  {
+    "item":1,
+    "id": 6,
+    "category": "accessory",
+    "name": "Sony WH-1000XM5",
+    "image": "./Images/Sony WH-1000XM5.jpg",
+    "price": 369,
+    "description": "Noise-canceling headphones with excellent sound."
+  },
+  {
+    "item":1,
+    "id": 7,
+    "category": "mobiles",
+    "name": "Google Pixel 8 Pro",
+    "image": "./Images/googlepixel8.webp",
+    "price": 899,
+    "description": "Flagship Pixel phone with Google AI features."
+  },
+  {
+    "item":1,
+    "id": 8,
+    "category": "laptop",
+    "name": "MacBook Air M3",
+    "image": "./Images/MacBook Air M3.jpeg",
+    "price": 1049,
+    "description": "Lightweight laptop with M3 chip and great battery life."
+  },
+  {
+    "item":1,
+    "id": 9,
+    "category": "mobiles",
+    "name": "Samsung Galaxy S24 Ultra",
+    "image": "./Images/Samsung Galaxy S24 Ultra.jpeg",
+    "price": 1199,
+    "description": "Top-tier Android phone with S Pen and epic camera."
+  },
+
+  {
+    "item":1,
+    "id": 10,
+    "category": "laptop",
+    "name": "ASUS ZenBook 14 OLED",
+    "image": "./Images/ASUS ZenBook 14 OLED.jpg",
+    "price": 1149,
+    "description": "Ultra-slim OLED laptop with long battery life."
+  },
+
+  {
+    "item":1,
+    "id": 11,
+    "category": "accessory",
+    "name": "AirPods Pro 2",
+    "image": "./Images/AirPods Pro 2.webp",
+    "price": 239,
+    "description": "Apple’s top-tier earbuds with ANC and Spatial Audio."
+  },
+
+
+  {
+    "item":1,
+    "id": 12,
+    "category": "accessory",
+    "name": "Logitech MX Master 3S",
+    "image": "./Images/Logitech MX Master 3S.webp",
+    "price": 89,
+    "description": "Ergonomic wireless mouse with precision control."
+  }
+  ]
+  

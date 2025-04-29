@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "category": "mobiles",
+    "name": "iPhone 15 Pro Max",
+    "image": "./Images/iPhone 15 Pro Max.webp",
+    "price": 1149,
+    "description": "Apple's flagship phone with A17 Pro chip and titanium body."
+  },
+  {
+    "id": 2,
+    "category": "mobiles",
+    "name": "Samsung Galaxy S24 Ultra",
+    "image": "./Images/Samsung Galaxy S24 Ultra.jpeg",
+    "price": 1199,
+    "description": "Top-tier Android phone with S Pen and epic camera."
+  },
+  {
+    "id": 3,
+    "category": "mobiles",
+    "name": "Google Pixel 8 Pro",
+    "image": "./Images/googlepixel8.webp",
+    "price": 899,
+    "description": "Flagship Pixel phone with Google AI features."
+  },
+  {
+    "id": 4,
+    "category": "mobiles",
+    "name": "OnePlus 12",
+    "image": "./Images/OnePlus 12.jpg",
+    "price": 749,
+    "description": "Powerful phone with Snapdragon 8 Gen 3 and AMOLED display."
+  },
+  {
+    "id": 5,
+    "category": "mobiles",
+    "name": "Xiaomi 14 Ultra",
+    "image": "./Images/Xiaomi 14 Ultra.png",
+    "price": 829,
+    "description": "Premium Xiaomi phone with Leica camera system."
+  },
+  {
+    "id": 6,
+    "category": "laptop",
+    "name": "MacBook Air M3",
+    "image": "./Images/MacBook Air M3.jpeg",
+    "price": 1049,
+    "description": "Lightweight laptop with M3 chip and great battery life."
+  },
+  {
+    "id": 7,
+    "category": "laptop",
+    "name": "Dell XPS 16",
+    "image": "./Images/Dell XPS 16.webp",
+    "price": 1799,
+    "description": "Premium Windows laptop with OLED touch display."
+  },
+  {
+    "id": 8,
+    "category": "laptop",
+    "name": "HP Spectre x360",
+    "image": "./Images/HP Spectre x360.webp",
+    "price": 1499,
+    "description": "Convertible touchscreen laptop with 13th Gen Intel CPU."
+  },
+  {
+    "id": 9,
+    "category": "laptop",
+    "name": "ASUS ZenBook 14 OLED",
+    "image": "./Images/ASUS ZenBook 14 OLED.jpg",
+    "price": 1149,
+    "description": "Ultra-slim OLED laptop with long battery life."
+  },
+  {
+    "id": 10,
+    "category": "laptop",
+    "name": "Lenovo Yoga 9i",
+    "image": "./Images/Lenovo Yoga 9i.jpg",
+    "price": 1349,
+    "description": "2-in-1 laptop with OLED screen and stylus support."
+  },
+  {
+    "id": 11,
+    "category": "accessory",
+    "name": "Sony WH-1000XM5",
+    "image": "./Images/Sony WH-1000XM5.jpg",
+    "price": 369,
+    "description": "Noise-canceling headphones with excellent sound."
+  },
+  {
+    "id": 12,
+    "category": "accessory",
+    "name": "AirPods Pro 2",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1660803972365",
+    "price": 239,
+    "description": "Apple’s top-tier earbuds with ANC and Spatial Audio."
+  },
+  {
+    "id": 13,
+    "category": "accessory",
+    "name": "Samsung Galaxy Buds2 Pro",
+    "image": "./Images/Samsung Galaxy Buds2 Pro.jpg",
+    "price": 199,
+    "description": "Compact earbuds with Hi-Fi sound and noise cancellation."
+  },
+  {
+    "id": 14,
+    "category": "watches",
+    "name": "Apple Watch Series 9",
+    "image": "./Images/Apple Watch Series 9.jpg",
+    "price": 469,
+    "description": "Smartwatch with advanced health sensors and bright display."
+  },
+  {
+    "id": 15,
+    "category": "accessory",
+    "name": "Logitech MX Master 3S",
+    "image": "./Images/Logitech MX Master 3S.webp",
+    "price": 89,
+    "description": "Ergonomic wireless mouse with precision control."
+  },
+  {
+    "id": 16,
+    "category": "accessory",
+    "name": "Razer BlackWidow V4 Pro",
+    "image": "./Images/Razer BlackWidow V4 Pro.webp",
+    "price": 219,
+    "description": "RGB mechanical keyboard for gamers."
+  },
+  {
+    "id": 17,
+    "category": "accessory",
+    "name": "Anker PowerCore 20K",
+    "image": "./Images/Anker PowerCore 20K.jpg",
+    "price": 59,
+    "description": "High-capacity portable charger with fast charging."
+  },
+  {
+    "id": 18,
+    "category": "accessory",
+    "name": "Samsung T7 Shield SSD 1TB",
+    "image": "./Images/Samsung T7 Shield SSD 1TB.jpeg",
+    "price": 119,
+    "description": "Fast and rugged external SSD for data storage."
+  },
+  {
+    "id": 19,
+    "category": "accessory",
+    "name": "Elgato Stream Deck MK.2",
+    "image": "./Images/Elgato Stream Deck MK.2.avif",
+    "price": 139,
+    "description": "Customizable control pad for streamers and creators."
+  },
+  {
+    "id": 20,
+    "category": "accessory",
+    "name": "TP-Link Archer AX55",
+    "image": "./Images/TP-Link Archer AX55.jpeg",
+    "price": 79,
+    "description": "WiFi 6 router with wide range and high speeds."
+  },
+  {
+    "id": 21,
+    "category": "accessory",
+    "name": "Apple Magic Keyboard",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2A3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632928898000",
+    "price": 119,
+    "description": "Wireless keyboard with sleek minimal design."
+  },
+  {
+    "id": 22,
+    "category": "accessory",
+    "name": "GoPro HERO12 Black",
+    "image": "./Images/GoPro HERO12 Black.jpg",
+    "price": 479,
+    "description": "Action camera with 5.3K video and stabilization."
+  },
+  {
+    "id": 23,
+    "category": "accessory",
+    "name": "DJI Mini 4 Pro",
+    "image": "./Images/DJI Mini 4 Pro.jpeg",
+    "price": 949,
+    "description": "Compact drone with 4K video and obstacle sensing."
+  },
+  {
+    "id": 24,
+    "category": "laptop",
+    "name": "Dell XPS 15",
+    "image": "./Images/Laptop - Dell XPS 15.jpeg",
+    "price": 1399,
+    "description": "High-performance laptop with Intel i7 and 16GB RAM."
+  },
+  {
+    "id": 25,
+    "category": "mobiles",
+    "name": "Samsung Galaxy S23",
+    "image": "./Images/Samsung Galaxy S23.webp",
+    "price": 799,
+    "description": "Latest Android flagship with stunning AMOLED display."
+  },
+  {
+    "id": 26,
+    "category": "mobiles",
+    "name": "JBL Flip 6",
+    "image": "./Images/JBL Flip 6.jpeg",
+    "price": 89,
+    "description": "Portable waterproof Bluetooth speaker."
+  },
+  {
+    "id": 27,
+    "category": "laptop",
+    "name": "Lenovo Legion 5",
+    "image": "./Images/Lenovo Legion 5.jpg",
+    "price": 1199,
+    "description": "Gaming laptop with AMD Ryzen 7 and RTX 4060."
+  },
+  {
+    "id": 28,
+    "category": "laptop",
+    "name": "WD Black SN850X SSD",
+    "image": "./Images/WD Black SN850X SSD.webp",
+    "price": 209,
+    "description": "High-speed internal storage for laptops and gaming PCs."
+  },
+  {
+    "id": 29,
+    "category": "mobiles",
+    "name": "iPhone 14 Pro",
+    "image": "./Images/iPhone 14 Pro.webp",
+    "price": 999,
+    "description": "Apple's flagship smartphone with Dynamic Island and Pro camera system."
+  },
+  {
+    "id": 30,
+    "category": "mobiles",
+    "name": "Google Nest Hub",
+    "image": "./Images/Google Nest Hub.jpg",
+    "price": 89,
+    "description": "Smart display for managing smart home devices."
+  },
+  {
+    "id": 31,
+    "category": "laptops",
+    "name": "Laptop - Logitech StreamCam",
+    "image": "./Images/Laptop - Dell XPS 15.jpeg",
+    "price": 149,
+    "description": "Premium webcam perfect for laptop users and streamers."
+  },
+  {
+    "id": 32,
+    "category": "laptops",
+    "name": "Laptop - MacBook Air M2",
+    "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg",
+    "price": 1099,
+    "description": "Ultra-thin Apple laptop with the powerful M2 chip."
+  }
+  
+]
